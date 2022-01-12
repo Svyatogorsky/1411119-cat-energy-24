@@ -1,0 +1,37 @@
+.additional {
+  .additional__wrapper {
+    padding: 0 20px;
+  }
+
+  .additional__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-top: 25px;
+    padding-bottom: 36px;
+  }
+
+  .additional__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .additional__item-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .additional__specs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

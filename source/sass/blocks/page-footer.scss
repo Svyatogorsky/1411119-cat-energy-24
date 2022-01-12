@@ -1,0 +1,28 @@
+.page-footer {
+  padding-top: 26px;
+  background-color: $basic-grey;
+
+  .page-footer__contacts {
+    &--white-bg {
+      background-color: $basic-white;
+    }
+  }
+
+  .page-footer__wrapper {
+    padding: 0 20px;
+  }
+
+  .page-footer__social {
+    padding-top: 39px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}

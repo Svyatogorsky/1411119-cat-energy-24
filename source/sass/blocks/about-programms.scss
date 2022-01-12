@@ -1,0 +1,29 @@
+.about-programms {
+  margin-bottom: 49px;
+
+  .about-programms__wrapper {
+    padding: 0 20px;
+  }
+
+  .about-programms__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+
+  .about-programms__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .about-programms__item {
+    margin-bottom: 20px;
+  }
+
+  .about-programms__description {
+    padding-left: 80px;
+  }
+}

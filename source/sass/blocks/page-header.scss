@@ -1,0 +1,10 @@
+.page-header {
+  min-height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .page-header__wrapper {
+    padding: 0 20px;
+  }
+}

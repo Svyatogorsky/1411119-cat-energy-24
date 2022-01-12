@@ -1,0 +1,21 @@
+.title-block {
+  padding-top: 27px;
+
+  .title-block__wrapper {
+    padding: 0 20px;
+  }
+
+  .main-title {
+    margin-bottom: 37px;
+  }
+
+  .title-block__description {
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 39px;
+    text-transform: uppercase;
+  }
+}
