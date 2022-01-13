@@ -1,0 +1,20 @@
+.contacts {
+  display: flex;
+  vertical-align: middle;
+  font-style: normal;
+  padding-bottom: 25px;
+  padding-top: 25px;
+
+  .contacts__slogan {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .contacts__description {
+    margin: 0;
+    padding: 0;
+  }
+}

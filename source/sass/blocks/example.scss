@@ -1,0 +1,17 @@
+.example {
+  background-color: $basic-grey;
+  padding-bottom: 40px;
+  padding-top: 25px;
+
+  .example__wrapper {
+    padding: 0 20px;
+  }
+
+  .example__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+}

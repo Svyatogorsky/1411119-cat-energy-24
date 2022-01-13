@@ -1,0 +1,22 @@
+.social {
+  .social__logo {
+    padding-bottom: 32px;
+  }
+
+  .social__list {
+    margin: 0;
+    padding-left: 73px;
+    padding-right: 79px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    vertical-align: middle;
+  }
+
+  .social__link {
+    display: block;
+  }
+}

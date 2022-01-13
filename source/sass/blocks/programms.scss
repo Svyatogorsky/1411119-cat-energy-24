@@ -1,0 +1,46 @@
+.programms {
+  .programms__wrapper {
+    padding: 0 20px;
+  }
+
+  .programms__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .programms__item {
+    background-color: $basic-grey;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 22px;
+  }
+
+  .programms__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 29px;
+  }
+
+  .programms__description {
+    padding-left: 20px;
+    padding-right: 33px;
+  }
+
+  .programms__link {
+    display: inline-block;
+    vertical-align: inherit;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: inherit;
+    text-transform: uppercase;
+    padding-left: 19px;
+  }
+}

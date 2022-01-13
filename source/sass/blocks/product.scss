@@ -1,0 +1,27 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+
+  .product__image {
+    width: 50%;
+    margin: auto;
+  }
+
+  .product__description {
+    width: 50%;
+  }
+
+  .product__link {
+    display: block;
+    color: inherit;
+  }
+
+  .product__title {
+    padding-right: 60px;
+  }
+
+  .product__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

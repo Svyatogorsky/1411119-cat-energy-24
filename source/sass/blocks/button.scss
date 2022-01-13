@@ -1,0 +1,18 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding: 11px 44px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-white;
+  background-color: $basic-green;
+  border: none;
+
+  &--add {
+    background-color: $basic-grey;
+    color: $basic-black;
+  }
+}

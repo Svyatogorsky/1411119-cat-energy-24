@@ -1,0 +1,54 @@
+.slider {
+  .slider__description {
+    margin-bottom: 20px;
+  }
+
+  .slider__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .slider__changes {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+  }
+
+  .slider__number {
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 7px;
+  }
+
+  .slider__money {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  .slider__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+
+  .slider__item--skinny {
+    display: none;
+  }
+
+  .slider__buttons {
+    text-align: center;
+  }
+}
