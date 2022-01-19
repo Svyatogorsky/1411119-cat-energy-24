@@ -17,13 +17,35 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-right: 75px;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   .about-programms__item {
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 250px;
+      padding-top: 150px;
+      padding-right: 30px;
+    }
   }
 
   .about-programms__description {
     padding-left: 80px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+    }
   }
 }

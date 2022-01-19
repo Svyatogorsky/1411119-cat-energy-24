@@ -1,6 +1,12 @@
 .additional {
+  .additional__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .additional__wrapper {
     padding: 0 20px;
+    margin-bottom: 35px;
   }
 
   .additional__title {
@@ -10,12 +16,17 @@
     font-weight: 400;
     padding-top: 25px;
     padding-bottom: 36px;
+    padding-left: 20px;
   }
 
   .additional__list {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $desktop-width) {
+      width: 900px;
+    }
   }
 
   .additional__item-title {
@@ -29,6 +40,29 @@
   .additional__specs {
     display: flex;
     justify-content: space-between;
+  }
+
+  .additional__promo {
+    padding: 0 20px;
+    padding-top: 186px;
+    padding-bottom: 44px;
+    background-image: url("../img/cat-promo-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+  }
+
+  .additional__promo-link {
+    display: block;
+  }
+
+  .additional__promo-description {
+    font-size: 16px;
+    line-height: 20px;
+    color: $basic-white;
+    width: 160px;
+    margin: 0 auto;
   }
 
   .button {

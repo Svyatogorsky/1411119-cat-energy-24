@@ -6,14 +6,30 @@
   padding-top: 27px;
   margin-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    background: none;
+    min-height: 720px;
+  }
+
   .promo__wrapper {
     position: relative;
     padding: 0 20px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 220px;
+      padding-left: 80px;
+    }
   }
 
   .main-title {
     color: $basic-white;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      color: $basic-black;
+      text-align: left;
+      width: 430px;
+    }
   }
 
   .promo__slogan {
@@ -25,6 +41,13 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 29px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      color: $basic-black;
+      text-align: left;
+    }
   }
 
   img {
@@ -36,5 +59,9 @@
     width: 100%;
     margin: 0 auto;
     margin-top: 3px;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+    }
   }
 }
