@@ -7,6 +7,13 @@
     padding: 0 20px;
   }
 
+  .example__container {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   .example__title {
     font-family: "Oswald", sans-serif;
     font-size: 36px;

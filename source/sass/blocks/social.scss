@@ -1,8 +1,4 @@
 .social {
-  .social__logo {
-    padding-bottom: 32px;
-  }
-
   .social__list {
     margin: 0;
     padding-left: 73px;
@@ -14,6 +10,12 @@
     flex-direction: row;
     justify-content: space-around;
     vertical-align: middle;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      width: 130px;
+    }
   }
 
   .social__link {

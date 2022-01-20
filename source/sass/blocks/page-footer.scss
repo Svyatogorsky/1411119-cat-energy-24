@@ -10,6 +10,22 @@
 
   .page-footer__wrapper {
     padding: 0 20px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .page-footer__logo {
+    display: block;
+    padding-bottom: 32px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 0;
+    }
   }
 
   .page-footer__social {
@@ -17,12 +33,22 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+    }
   }
 
   .page-footer__copyright {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 22px;
     padding-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      width: 165px;
+    }
   }
 }

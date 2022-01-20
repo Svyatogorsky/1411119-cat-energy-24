@@ -1,21 +1,46 @@
 .slider {
   .slider__description {
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 120px;
+    }
   }
 
   .slider__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .slider__changes-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      margin: 0;
+    }
   }
 
   .slider__changes {
+    width: 50%;
     padding-left: 25px;
     padding-right: 25px;
     text-align: center;
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      margin-right: 42px;
+    }
   }
 
   .slider__number {
+    display: block;
     font-family: "Oswald", sans-serif;
     font-size: 25px;
     line-height: 24px;
@@ -30,6 +55,13 @@
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      text-align: right;
+      width: 130px;
+      margin: 0;
+    }
   }
 
   .slider__list {
