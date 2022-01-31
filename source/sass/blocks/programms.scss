@@ -1,6 +1,14 @@
 .programms {
   .programms__wrapper {
     padding: 0 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 110px;
+    }
   }
 
   .programms__list {
@@ -16,6 +24,7 @@
   }
 
   .programms__item {
+    position: relative;
     background-color: $basic-grey;
     margin-bottom: 20px;
     padding-left: 20px;
@@ -24,44 +33,168 @@
     padding-bottom: 22px;
 
     @media (min-width: $tablet-width) {
+      padding-top: 77px;
+      padding-bottom: 53px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      padding-top: 77px;
+      padding-bottom: 55px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 24px;
+      left: 22px;
+      right: 0;
+      bottom: 0;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: $basic-green;
+
+      @media (min-width: $tablet-width) {
+        top: 82px;
+        left: auto;
+        right: 60px;
+        width: 200px;
+        height: 200px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 47px;
+        left: 52px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
       text-align: left;
       padding-left: 50px;
-      padding-right: 380px;
     }
 
     @media (min-width: $desktop-width) {
       width: 50%;
       margin-right: 80px;
       padding-right: 0;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .programms__item--slim {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/cat-slim.svg");
+      background-repeat: no-repeat;
+      background-size: 36px 50px;
+      z-index: 2;
+      width: 36px;
+      height: 50px;
+      top: 20px;
+      left: 30px;
+
+      @media (min-width: $tablet-width) {
+        width: 140px;
+        height: 194px;
+        background-size: 140px 194px;
+        right: 80px;
+        top: 80px;
+        left: auto;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 70px;
+        height: 97px;
+        background-size: 70px 97px;
+        top: 40px;
+        left: 65px;
+      }
+    }
+  }
+
+  .programms__item--pro {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/cat-pro.svg");
+      background-repeat: no-repeat;
+      background-size: 67px 28px;
+      z-index: 2;
+      width: 67px;
+      height: 28px;
+      top: 35px;
+      left: 12px;
+
+      @media (min-width: $tablet-width) {
+        width: 268px;
+        height: 112px;
+        background-size: 268px 112px;
+        left: auto;
+        top: 130px;
+        right: 25px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 134px;
+        height: 56px;
+        background-size: 134px 56px;
+        top: 70px;
+        left: 30px;
+      }
+    }
+  }
+
+  .programms__description {
+    padding-bottom: 23px;
+    border-bottom: 1px solid #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      width: 320px;
+      margin-bottom: 43px;
+      border: none;
     }
   }
 
   @media (min-width: $desktop-width) {
     .programms__description {
-      padding-right: 120px;
+      width: auto;
+      padding-right: 50px;
     }
   }
 
   .programms__title {
+    position: relative;
     font-family: "Oswald", sans-serif;
     font-size: 24px;
     line-height: 37px;
     font-weight: 400;
     text-transform: uppercase;
-    text-align: center;
+    padding-left: 71px;
     margin-top: 0;
     margin-bottom: 29px;
 
     @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 1;
       text-align: left;
+      padding-left: 0;
     }
 
     @media (min-width: $desktop-width) {
       text-align: center;
+      margin-bottom: 73px;
     }
   }
 
   .programms__link {
+    position: relative;
     display: inline-block;
     vertical-align: inherit;
     font-family: "Oswald", sans-serif;
@@ -70,5 +203,16 @@
     font-weight: 400;
     color: inherit;
     text-transform: uppercase;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 104px;
+      background-image: url("../img/icon_arrow.svg");
+      background-repeat: no-repeat;
+      width: 32px;
+      height: 10px;
+    }
   }
 }

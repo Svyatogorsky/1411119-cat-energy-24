@@ -7,17 +7,41 @@
   padding-bottom: 25px;
   padding-top: 25px;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 56px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 110px;
+    background: $basic-white;
+    width: 565px;
+    position: absolute;
+    top: 90px;
+    padding: 56px 80px;
+  }
+
   .contacts__slogan {
     font-family: "Oswald", sans-serif;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      width: 160px;
+    }
   }
 
   .contacts__description {
     margin: 0;
     padding: 0;
     line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 160px;
+    }
   }
 }

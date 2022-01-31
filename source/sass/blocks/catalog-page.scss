@@ -1,9 +1,9 @@
 .catalog-page {
   .catalog-page__wrapper {
     padding: 0 20px;
-  }
 
-  .main-title {
-    padding-bottom: 41px;
+    @media (min-width: $desktop-width) {
+      padding: 0 110px;
+    }
   }
 }
