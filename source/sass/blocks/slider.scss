@@ -1,68 +1,5 @@
 .slider {
-  .slider__description {
-    margin-bottom: 20px;
-
-    @media (min-width: $tablet-width) {
-      padding-right: 120px;
-    }
-  }
-
-  .slider__wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .slider__changes-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-
-    @media (min-width: $tablet-width) {
-      width: auto;
-      margin: 0;
-    }
-  }
-
-  .slider__changes {
-    width: 50%;
-    padding-left: 25px;
-    padding-right: 25px;
-    text-align: center;
-    margin-bottom: 20px;
-
-    @media (min-width: $tablet-width) {
-      width: auto;
-      margin-right: 42px;
-    }
-  }
-
-  .slider__number {
-    display: block;
-    font-family: "Oswald", sans-serif;
-    font-size: 25px;
-    line-height: 24px;
-    font-weight: 400;
-    margin-bottom: 7px;
-  }
-
-  .slider__money {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "Oswald", sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    margin: 0 auto;
-
-    @media (min-width: $tablet-width) {
-      text-align: right;
-      width: 130px;
-      margin: 0;
-    }
-  }
+  align-self: flex-end;
 
   .slider__list {
     margin: 0;
@@ -81,6 +18,62 @@
   }
 
   .slider__buttons {
+    display: flex;
+    justify-content: space-around;
     text-align: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .slider__button-progress {
+    position: relative;
+    width: 86px;
+    height: 14px;
+    background-color: $basic-white;
+    border-radius: 6px;
+
+    @media (min-width: $tablet-width) {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      margin: auto;
+      top: -15px;
+    }
+  }
+
+  .slider__button {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      &--line {
+        width: 426px;
+        height: 6px;
+        border-radius: 6px;
+        background-color: #dcdcdc;
+      }
+    }
+  }
+
+  .slider__button-progress-small {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 35px;
+    height: 6px;
+    background-color: $basic-green;
+    border-radius: 6px;
+
+    @media (min-width: $tablet-width) {
+      width: 8px;
+      height: 8px;
+      top: 12px;
+      left: 13px;
+    }
   }
 }

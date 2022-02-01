@@ -14,5 +14,15 @@
   &--add {
     background-color: $basic-grey;
     color: $basic-black;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 17px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 1;
   }
 }
